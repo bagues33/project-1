@@ -65,7 +65,7 @@ h1 {
 }
 
 #kolomatas {
-  background-image: url('edy.png');
+  background-image: url('../image/edy.png');
   background-repeat: repeat;
   background-size: 330px;
 }

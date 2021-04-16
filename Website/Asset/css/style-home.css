@@ -73,7 +73,7 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: black;
-  background-image: url('searchicon.png');
+  background-image: url('../image/searchicon.png');
   background-size: 30px;
   background-position: 8px 8px; 
   background-repeat: no-repeat;

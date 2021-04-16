@@ -3,12 +3,19 @@
   overflow: hidden;
 }
 
-#sdkiri {
+.col-md-1 {
   background-color: #b3b1b2;
   overflow: hidden;
 }
 
+#verti {
+	writing-mode: vertical-lr;
+	font-size: 30px;
+	padding-bottom: 30px;
+	transform: rotate(180deg);
+	font-height: 20px;
 
+}
 
 .marquee {
   margin: 0;
@@ -69,7 +76,7 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: black;
-  background-image: url('searchicon.png');
+  background-image: url('../image/searchicon.png');
   background-size: 30px;
   background-position: 8px 8px; 
   background-repeat: no-repeat;
@@ -92,15 +99,11 @@ input[type=text]:focus {
   background-color: #EDEDED;
 }
 
-.col-md-6 .row {
-  margin-top: 5px;
-}
-
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 15;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: white;
@@ -138,12 +141,52 @@ input[type=text]:focus {
 }
 
 span {
-  
-  z-index: 15;
-  margin-left: 560px;
-  margin-top: -630px;
+	float: right;
 }
 
+table {
+  border-bottom: solid black 2px;
+}
+
+
+tr .header {
+  line-height: 0.2;
+}
+
+
+tr .header p {
+  margin-top: 11px;
+  font-size: 17px;
+}
+
+tr p {
+  font-size: 10px;
+  margin-top: -22px;
+}
+
+tr .bawah p {
+  font-size: 11px;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+tr .bawah a {
+  color: black;
+}
+
+.bawah {
+  border-bottom: 0px;
+}
+
+tr .next {
+    padding-left: 470px;
+}
+
+
+tr td svg {
+  padding-left: 15px;
+  color: black;
+}
 
 #inline a {
 	display: inline;
@@ -172,78 +215,4 @@ span {
     
 }
 
-.col-md-1 .vertikal {
-     transform: rotate(180deg);
-      writing-mode: vertical-rl;
-}
 
-.col-md-11 {
-  background-color: #b3b1b2;
-}
-
-.tulisan {
-  overflow: hidden;
-  z-index: 10;
-}
-
-.tulisan h3 {
-    text-align: center;
-    margin-left: 210px;
-    margin-top: 15px;
-}
-
-.tulisan img {
-  width: 90px;
-  height: 120px;
-  margin-top: -70px;
-  margin-left: 30px;
-}
-
-.tulisan .judul {
-  text-align: center;
-  margin-left: 200px;
-  margin-top: -70px;
-  font-size: 14px;
-}
-
-.tulisan .box {
-  width: 110px;
-  height: 40px;
-  border: solid 1px black;
-  border-radius: 30px;
-  margin-top: 60px;
-  text-align: center;
-  padding-top: 7px;
-  margin-left: 17px;
-}
-
-.tulisan .isi {
-  margin-top: 53px;
-  margin-left: 220px;
-  margin-right: 10px;
-  font-size: 14px;
-}
-
-.tulisan .seri {
-  margin-top: -340px;
-  margin-left: -10px;
-  text-align: center;
-  font-size: 12px;
-  width: 200px;
-  height: 340px;
-}
-
-.skewedr {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ededed;
-  z-index: 0;
-  transform: skewY(47deg);
-  transform-origin: top right;
-
-}
