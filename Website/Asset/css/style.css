@@ -170,8 +170,9 @@ footer #atas p {
 }
 
 span.home {
-	margin-left: 620px;
+	margin-left: 643px;
   position: absolute;
+  color: white;
 }
 
 #inline a {
@@ -323,7 +324,7 @@ span.area-a {
 }
 
 /*awal form login*/
-.box {
+.box.area-a {
     width: 300px;
     padding-top: 20px;
     padding-left: 5px;
@@ -333,12 +334,12 @@ span.area-a {
     background: transparent;
     text-align: center;
     transition: 0.25s;
-    margin: -125px;
+    margin-top: 0px;
 
 }
 
-.box input[type="text"],
-.box input[type="password"] {
+.box.area-a input[type="text"],
+.box.area-a input[type="password"] {
     border: 0;
     background: none;
     display: block;
@@ -354,7 +355,7 @@ span.area-a {
     
 }
 
-.box h4 {
+.box.area-a h4 {
     color: black;
     text-transform: uppercase;
     font-weight: 500;
@@ -362,13 +363,13 @@ span.area-a {
 
 }
 
-.box input[type="text"]:focus,
-.box input[type="password"]:focus {
+.box.area-a input[type="text"]:focus,
+.box.area-a input[type="password"]:focus {
     width: 350px;
     border-color: black;
 }
 
-.box input[type="submit"] {
+.box.area-a input[type="submit"] {
     border: 0;
     background: #697BA8;
     display: block;
@@ -383,7 +384,7 @@ span.area-a {
     cursor: pointer
 }
 
-.box input[type="submit"]:hover {
+.box.area-a input[type="submit"]:hover {
     background: transparent;
 }
 /*akhir form login*/
@@ -798,7 +799,6 @@ input[type=text]:focus {
 .jadsidenav .curved {
       padding-top: 0px;
       padding-left: 0px;
-      font-size: 32px;
       margin-top:-30px;
 }
 
@@ -807,15 +807,19 @@ input[type=text]:focus {
 
 }
 
-.curved svg {
+.curved.ip svg {
   position: absolute;
+  right: 0px;
+  left: 40px;
+}
 
-  
+.jadsidenav .curved.ip textPath {
+  font-size: 38px;
 }
 
 span.ip {
 	float: right;
-  margin-left: 620px;
+  margin-left: 630px;
 }
 
 #inline a {
@@ -1017,7 +1021,8 @@ h1.p {
   }
 
 .col-md-6.p {
-  height: 637px;
+  margin: 0;
+  height: 100%;
   background-color: #EDEDED;
 }
 
@@ -1030,13 +1035,23 @@ h1.p {
 
 }
 
-span {
+span.perpus {
 	float: right;
-
+  padding-left: 180px;
 }
 
 table {
   border-bottom: solid black 2px;
+}
+
+table.atas {
+  display: block;
+  background-color: white;
+}
+
+
+table.bawah {
+  position: absolute;
 }
 
 
@@ -1065,12 +1080,10 @@ tr .bawah a {
   color: black;
 }
 
-.bawah {
-  border-bottom: 0px;
-}
+
 
 tr .next {
-    padding-left: 470px;
+    padding-left: 490px;
 }
 
 
@@ -1102,6 +1115,10 @@ h1.p2 {
 .row .input-group {
 	padding-bottom: 115px;
   padding-left: 115px;
+}
+
+input.perpus2[type=text]:focus {
+  width: 140%;
 }
 
 ::-webkit-input-placeholder {
@@ -1154,9 +1171,8 @@ h1.p2 {
 }
 
 span.p2 {
-  
-  z-index: 16;
-  margin-left: 560px;
+  z-index: 10;
+  margin-left: 580px;
   margin-top: -630px;
 }
 
@@ -1166,9 +1182,15 @@ span.p2 {
 
 }
 
+.col-md-1.p2 {
+  background-color: transparent;
+}
+
 .col-md-1.p2 .vertikal-p2 {
      transform: rotate(180deg);
       writing-mode: vertical-rl;
+      margin-top: 5px;
+
 }
 
 .col-md-11 {
@@ -1178,6 +1200,7 @@ span.p2 {
 .tulisan {
   overflow: hidden;
   z-index: 10;
+
 }
 
 .tulisan h3 {
@@ -1195,7 +1218,7 @@ span.p2 {
 
 .tulisan .judul {
   text-align: center;
-  margin-left: 200px;
+  margin-left: 120px;
   margin-top: -70px;
   font-size: 14px;
 }
@@ -1237,8 +1260,9 @@ span.p2 {
   height: 100%;
   background: #ededed;
   z-index: 0;
-  transform: skewY(47deg);
+  transform: skewY(46deg);
   transform-origin: top right;
+
 
 }
 /* -------------- Akhir Perpustakaan 2 ------------ */
@@ -1402,10 +1426,13 @@ span {
     padding-left: 100px;
 }
 
-.row .curved {
+.row#bawah-pusta2 .curved {
       padding-top: 10px;
-      padding-left: 280px;
-      font-size: 66px;
+      font-size: 58px;
+}
+
+#bawah-pusta2  .curved {
+  padding-left: 250px;
 }
 
 .curved path {
