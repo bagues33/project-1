@@ -1,13 +1,33 @@
  /*----------------------Awal Home------------------*/
 .container-fluid {
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  
 }
 
-.col-md-1 {
-  background-color: #b3b1b2;
-  overflow: hidden;
+.col1 {
+  flex: 1;
+ 
+}
+
+.col3 {
+  flex: 1;
+  
+}
+
+.col2 {
+  background-color: salmon;
+}
+
+#sdkiri {
+  /*background-color: #b3b1b2;*/
+  /*overflow: hidden;*/
+  /*position: fixed;*/
   height: 100vh;
+  position: fixed;
+  /*z-index: 22;*/
+  width: 4.5rem;
+  margin-left: -1rem;
 }
 
 
@@ -17,12 +37,13 @@
   color: black;
   font-size: 50px;
   font-weight: ;
-  margin-left: 50px;
+  margin-left: 90px;
+
 }
 
 .marquee {
-  position: relative;
-  width: 100vw;
+  /*position: relative;*/
+  /*width: 100vw;*/
   max-width: 100%;
   height: 200px;
   overflow-x: ;
@@ -41,11 +62,17 @@
   to { transform: translateX(-100%); }
 }
 
-.col-md-5 {
+/*.col {
 	background-color: #8091af;
+  margin-left: 3rem;
+}*/
+
+.col2 {
+  flex: 12;
+  /*overflow: hidden;*/
 }
 
-.col-md-5 svg {
+.col-md-6 svg {
   color: black;
   margin-top: 10px;
 }
@@ -58,8 +85,8 @@ h1 {
 	height: 170px;
 }
 
-.row .input-group {
-	padding-bottom: 115px;
+.input-group {
+	padding-bottom: 0px;
   padding-left: 115px;
 }
 
@@ -89,7 +116,10 @@ input.home[type=text]:focus {
 }
 
 footer {
-	margin-top: 28px;
+  /*position: relative;*/
+	margin-top: 4rem;
+  margin-left: -6rem;
+  /*width: 35rem;*/
 }
 
 footer #atas {
@@ -101,6 +131,21 @@ footer #atas {
 footer #atas p {
 	text-align: center;
   color: black;
+
+}
+
+footer .cards img {
+  width: 100px;
+  /*margin-left: 8rem;*/
+}
+
+.kotak {
+  overflow: scroll;
+  margin-left: 8rem;
+}
+
+.kotak .cards{
+  display: inline-block;
 
 }
 
@@ -204,7 +249,6 @@ span.home {
 
 #kolomatas-h {
 	height: 335px;
-	
 }
 
 iframe {
@@ -275,7 +319,13 @@ section .h2 {
   transform-origin: top right;
 
 }
-/* ------------------- Akhir Home ----------------- */
+
+@media( min-width: 600px) {
+  .container-fluid {
+    display: flex;
+  }
+}
+/* ---------------------------------- Akhir Home ------------------------------- */
 
 /* ------------------ Awal area_anggota ----------- */
 .col-md-1 p {
@@ -693,7 +743,7 @@ span {
 }
 
 h1.ip {
-	padding-top: 180px;
+	padding-top: 160px;
 }
 
 .row h1 {
@@ -701,7 +751,7 @@ h1.ip {
 }
 
 .row .input-group-ip {
-	padding-bottom: 115px;
+	margin-top: -1.5rem;
   padding-left: 115px;
 }
 
@@ -904,9 +954,9 @@ span.ip {
 	background-color: #8091af;
 }
 
-.col-md-5.oa h1 {
+.col-md-5.oa h2 {
   text-align: center;
-  padding-top: 48%;
+  padding-top: 43%;
 }
 
 .col-md-5.oa svg {
@@ -1003,7 +1053,7 @@ span {
   margin-top: 10px;
 }
 
-h1.p {
+h2.p {
 	padding-top: 210px;
 }
 
